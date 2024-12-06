@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "seeking_hearts",
+  "version": "${version}",
+  "name": "Seeking Hearts",
+  "description": "why is this not a vanilla feature",
+  "authors": [
+    "Starlotte",
+    "Ozelot5836"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/seeking_hearts/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.starlotte.seeking_hearts.fabric.seeking_heartsFabric"
+    ],
+    "client": [
+      "com.starlotte.seeking_hearts.fabric.client.seeking_heartsFabricClient"
+    ]
+  },
+  "mixins": [
+    "seeking_hearts.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

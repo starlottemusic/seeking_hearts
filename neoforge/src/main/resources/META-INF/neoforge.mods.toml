@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "seeking_hearts"
+version = "${version}"
+displayName = "Seeking Hearts"
+authors = "Starlotte, Ozelot5836"
+description = '''
+why is this not a vanilla feature
+'''
+logoFile = "assets/seeking_hearts/icon.png"
+
+[[dependencies.seeking_hearts]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.seeking_hearts]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "seeking_hearts.mixins.json"
